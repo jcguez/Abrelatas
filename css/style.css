@@ -1,0 +1,91 @@
+*, html{
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+.full-screen{
+	width: 100vw;
+	height: 100vh;
+}
+.background-black{
+	background-color: #0d0d0d;
+}
+.background-white{
+	background-color: #FFF;
+}
+.background-peach{
+	background-color: #D7765D;
+}
+.background-gray{
+	background-color: #F6F6F6;
+}
+.site-container{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+/*Sección header*/
+.section-header{
+	padding: 35px 130px;
+}
+.section-header > .nav-bar{
+	justify-content: space-between;
+	display: flex;
+}
+.section-header > .nav-bar > *{
+	display: inline-flex;
+}
+.section-header > .nav-bar > .btn-menu{
+	align-self: center;
+}
+.section-header .background-text{
+	position: absolute;
+	z-index: 2;
+	color: #1d1d1d;
+	font-weight: bold;
+	font-size: 15em;
+	right: 10vw;
+	margin-top: 35vh;
+}
+.section-header .left-black-box{
+	position: absolute;
+	z-index: 3;
+	display: flex;
+	width: 60%;
+	height: 100vh;
+	margin-top: 10vh;
+	left: 0;
+	background-color: #141414;
+}
+.section-header .left-black-box .cont-text{
+	padding: 200px 130px;
+	flex-direction: column;
+	color: #fff;
+	justify-content: center;
+}
+.section-header .left-black-box .cont-text h1{
+	font-size: 50px;
+	font-weight: 300;
+	margin-top: 0;
+}
+.section-header .left-black-box .cont-text small{
+	font-size: 11px;
+	align-self: flex-start;
+	font-weight: 100;
+	color: #ccc;
+}
+/*Sección intro*/
+.section-intro{
+	display: flex;
+	flex-direction: row;
+}
+.section-intro .panel-left{
+	width: 45%;
+	height: 100vh;
+}
+.section-intro .panel-right{
+	width: 55%;
+	height: 100vh;
+	padding: 50px 130px;
+}
+/* Color recuadro izquierdo negro: #141414*/
