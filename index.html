@@ -4,11 +4,16 @@
 	<meta charset="UTF-8">
 	<title>A b r e l a t a s</title>
 	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&amp;subset=latin-ext" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<!-- ************************** TODO LIST ************************** -->
+	<!-- * 1.- Cambiar los recursos (csss / js) por los minificados    * -->
+	<!-- * 2.- * -->
+
 	<!-- SideNav -->
 	<ul id="slide-out" class="side-nav">
     	<!-- <li>
@@ -27,19 +32,31 @@
 	    <li><a class="subheader">Subheader</a></li>
 	    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
   	</ul>
-	<!-- Contenedor Principal para el sitio -->
+	<!-- Main Container -->
 	<div class="site-container">
 		<!-- Sección header -->
 		<div class="section-header background-black full-screen">
 			<div class="background-text">Abrelatas.</div>
-			<div class="nav-bar">
-				<div class="logo">
-					<img src="img/logo.png" alt="" class="responsive-img">
+			<!-- NavBar -->
+			<nav class="nav-bar fixed background-black">
+				<div class="midnightHeader default">
+					<div class="logo">
+						<img src="img/logo.png" alt="" class="responsive-img">
+					</div>
+					<div class="btn-menu">
+						<a href="#" data-activates="slide-out" class="button-collapse"><img src="img/iconMenu.png" alt="" class="responsive-img"></a>
+					</div>
 				</div>
-				<div class="btn-menu">
-					<a href="#" data-activates="slide-out" class="button-collapse"><img src="img/iconMenu.png" alt="" class="responsive-img"></a>
+				<div class="midnightHeader white">
+					<div class="logo">
+						<img src="img/logoBlack.png" alt="" class="responsive-img">
+					</div>
+					<div class="btn-menu">
+						<a href="#" data-activates="slide-out" class="button-collapse"><img src="img/iconMenuBlack.png" alt="" class="responsive-img"></a>
+					</div>
 				</div>
-			</div>
+
+			</nav>
 			<div class="left-black-box">
 				<div class="cont-text valign-wrapper">
 					<h1>Texto de prueba texto prueba texto de prueba y algo de texto de prueba.</h1>
@@ -47,17 +64,66 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- Section Intro -->
-		<div class="section-intro background-white full-screen">
+		<div class="section-intro background-white full-screen" data-midnight="white">
 			<div class="panel-left background-peach"></div>
-			<div class="panel-right valign-wrapper">
-				<h5>Texto de prueba texto prueba texto de prueba y algo de texto prueba para el espacio en blanco</h5>
+			<div id="texto-intro-home" class="panel-right valign-wrapper">
+				<h5 class="phrase">Texto de prueba texto prueba texto de prueba y algo de texto prueba para el espacio en blanco</h5>
 			</div>
 		</div>
+
+		<!-- Section Projects -->
+		<div class="section-projects background-white">
+			<div class="separator">
+				<div class="header">
+					<small class="center-align">Proyectos</small>
+					<h5 class="center-align">Una selección de nuestro trabajo más reciente</h5>
+				</div>
+				<div class="row grid-projects">
+    				<div class="col s12 cards-container">
+       					<div class="card big-box background-gray"></div>
+       					<div class="card small-box background-gray"></div>
+        				<div class="card small-box background-gray"></div>
+       					<div class="card big-box background-gray">
+         					<!-- <div class="card-content white-text">
+           						<span class="card-title">Card Title 4</span>
+           						<p>I am a very simple card. I am good at containing small bits of information.</p>
+         					</div>
+         					<div class="card-action">
+           						<a href="#">This is a link</a>
+           						<a href="#">This is a link</a>
+         					</div> -->
+        				</div>
+    				</div>
+  				</div>
+
+			</div>
+		</div>
+
+		<!-- Section blocks -->
+		<div class="section-blocks background-white" data-midnight="white">
+			<div class="container-blocks">
+				<div class="black-block background-black"></div>
+				<div class="peach-block background-peach"></div>
+				<div class="white-block background-white"></div>
+
+			</div>
+		</div>
+		
+		<!-- Section Footer -->
+		<div class="section-footer background-black">
+			<div class="separator-footer">
+				<img src="img/iconAbrelatas.png" alt="Logo Abrelatas Agencia Creativa">
+			</div>
+		</div>
+
+
 	</div>
-	<!--  -->
+
 	<script src="js/jquery-3.1.1.js"></script>
 	<script src="js/materialize.js"></script>
+	<script src="js/midnight.jquery.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

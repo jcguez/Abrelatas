@@ -2,6 +2,13 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+.separator{
+	padding: 150px 80px;
+}
+.separator-footer{
+	padding: 220px 130px;
 }
 .full-screen{
 	width: 100vw;
@@ -24,20 +31,46 @@
 	width: 100%;
 	height: auto;
 }
-/*Sección header*/
+/*Section header*/
 .section-header{
 	padding: 35px 130px;
 }
-.section-header > .nav-bar{
-	justify-content: space-between;
-	display: flex;
+.section-header .nav-bar{
+	z-index: 10;
+	box-shadow: unset;
 }
-.section-header > .nav-bar > *{
+.section-header .nav-bar .midnightInner{
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	padding: 20px 130px;
+}
+.section-header .nav-bar .midnightInner *{
 	display: inline-flex;
 }
-.section-header > .nav-bar > .btn-menu{
+.section-header .nav-bar .midnightInner .btn-menu{
 	align-self: center;
 }
+.section-header nav.nav-bar  .midnightInner a.button-collapse{
+	display: block;
+}
+/* Start styles for Midnight JS */
+.midnightHeader.default{
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	padding: 20px 130px;
+}
+.midnightHeader.white{
+	background-color: #ccc;
+}
+/*End styles for Midnight JS*/
 .section-header .background-text{
 	position: absolute;
 	z-index: 2;
@@ -53,7 +86,8 @@
 	display: flex;
 	width: 60%;
 	height: 100vh;
-	margin-top: 10vh;
+	margin-top: 15vh;
+	top: 0;
 	left: 0;
 	background-color: #141414;
 }
@@ -74,7 +108,7 @@
 	font-weight: 100;
 	color: #ccc;
 }
-/*Sección intro*/
+/*Section intro*/
 .section-intro{
 	display: flex;
 	flex-direction: row;
@@ -88,4 +122,78 @@
 	height: 100vh;
 	padding: 50px 130px;
 }
-/* Color recuadro izquierdo negro: #141414*/
+.section-intro .panel-right .phrase{
+	line-height: 1.6;
+}
+
+/*Section projects*/
+.section-projects .header > *{
+	display: block;
+}
+.section-projects .header small{
+	text-transform: uppercase;
+}
+.grid-projects{
+	margin-top: 125px;
+}
+/* Grid Masonry */
+.cards-container {
+  column-break-inside: avoid;
+}
+.cards-container .card {
+  display: inline-block;
+  overflow: visible;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: unset;
+}
+.cards-container .card.big-box{
+	height: 650px;
+}
+.cards-container .card.small-box{
+	height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cards-container {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .cards-container {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .cards-container {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+/*Section Blocks*/
+.section-blocks{
+	width: 100vw;
+	height: auto;
+}
+.container-blocks .black-block{
+	width: 75vw;
+	height: 50vh;
+}
+.container-blocks .peach-block{
+	width: 100vw;
+	height: 90vh;
+}
+.container-blocks .white-block{
+	width: 100vw;
+	height: 45vh;
+}
+
+
+
+
+
