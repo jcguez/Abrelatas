@@ -6,7 +6,7 @@ $(document).ready(function () {
 
 	$('nav.fixed').midnight()
 
-	var options = {selector: '#texto-intro-home', offset: 500, callback: function(el) { $(el).fadeIn()}}
+	var options = [{selector: '#cards-projects', offset: 200, callback: function() { Materialize.fadeInImage('#cards-projects') }}]
 
   Materialize.scrollFire(options);
 

@@ -127,6 +127,9 @@
 }
 
 /*Section projects*/
+#cards-projects{
+	opacity: 0;
+}
 .section-projects .header > *{
 	display: block;
 }
