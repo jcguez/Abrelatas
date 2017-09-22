@@ -4,11 +4,27 @@
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
+body{
+	opacity: 0;
+}
+/*.scroll-item{
+	opacity: 0;
+}*/
 .separator{
 	padding: 150px 80px;
+	height: 100%;
+}
+.separator-wrapper-top{
+	padding: 200px 130px;
+	height: 100%;
+}
+.separator-wrapper{
+	padding: 150px 130px;
+	height: 100%;
 }
 .separator-footer{
 	padding: 220px 130px;
+	height: 100%;
 }
 .full-screen{
 	width: 100vw;
@@ -122,14 +138,11 @@
 	height: 100vh;
 	padding: 50px 130px;
 }
-.section-intro .panel-right .phrase{
+.phrase{
 	line-height: 1.6;
 }
 
 /*Section projects*/
-#cards-projects{
-	opacity: 0;
-}
 .section-projects .header > *{
 	display: block;
 }
@@ -183,6 +196,9 @@
 	width: 100vw;
 	height: auto;
 }
+.container-blocks{
+	position: relative;
+}
 .container-blocks .black-block{
 	width: 75vw;
 	height: 50vh;
@@ -193,10 +209,68 @@
 }
 .container-blocks .white-block{
 	width: 100vw;
-	height: 45vh;
+	height: 50vh;
+}
+.container-blocks .black-text-block{
+	position: absolute;
+	bottom: 15vh;
+	right: 0;
+	width: 70vw;
+	height: 75vh;
+	color: #666;
+	padding: 100px 230px;
+}
+.container-blocks .black-text-block ul{}
+.container-blocks .black-text-block ul li{
+	display: flex;
+}
+.container-blocks .black-text-block ul li small{
+	align-self: flex-end;
+	margin-bottom: 1.368rem;
+	font-size: 100%;
+	margin-right: 10px;
+}
+.container-blocks .black-text-block ul li h3{
+	margin-top: 0;
 }
 
 
 
+/* _______________ We are */
+.section-intro-we{
+	position: relative;
+	width: 100vw;
+	height: 90vh;
+}
+.section-intro-we .container-text{
+	width: 55vw;
+	height: 100%;
+}
+.section-intro-we .container-image{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 45vw;
+	height: 100vh;
+}
+.section-image-gray{
+	width: 100vw;
+	height: 75vh;
+}
+.section-image-gray .container-image-gray-we{
+	width: 75vw;
+	height: 75vh;
+	margin-left: 3vw;
+}
+.section-image-black{
+	position: relative;
+}
+.section-image-black .container-image-peach-we{
+	position: absolute;
+	top: 15vh;
+	left: 0;
+	width: 45vw;
+	height: 100vh;
+}
 
 
