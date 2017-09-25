@@ -86,6 +86,9 @@ body{
 .midnightHeader.white{
 	background-color: #ccc;
 }
+.midnightHeader.gray{
+	background-color: #F6F6F6;
+}
 /*End styles for Midnight JS*/
 .section-header .background-text{
 	position: absolute;
