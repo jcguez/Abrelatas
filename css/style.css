@@ -45,6 +45,9 @@ body{
 .width-96{
 	width: 96vw;
 }
+.background-transparent{
+	background-color: transparent;
+}
 .background-black{
 	background-color: #0d0d0d;
 }
@@ -180,12 +183,24 @@ body{
   width: 100%;
   border-radius: 0;
   box-shadow: unset;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 .cards-container .card.big-box{
 	height: 650px;
 }
 .cards-container .card.small-box{
 	height: 300px;
+}
+.cards-container .card.full-height-box{
+	height: 100vh;
+}
+.cards-container .card.cart-texto{
+	height: 495px;
+}
+.cards-container .card-full{
+	width: 100%;
+	height: 250px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -328,6 +343,63 @@ body{
 	display: -o-flex;
 	display: flex;
 	justify-content: flex-end;
+	position: relative;
 }
-
+.section-blocks-we-do .right-top{
+	position: absolute;
+	top: -9.3vh;
+	right: 3.8vw;
+	width: 60vw;
+	height: 60vh;
+	z-index: 2;
+}
+.section-blocks-we-do .left-bottom{
+	position: absolute;
+	top: 94.1vh;
+	left: 0;
+	width: 56.1vw;
+	height: 70vh;
+	z-index: 2;
+}
+.section-blocks-we-do .text{
+	position: absolute;
+	top: 94.1vh;
+	right: 0;
+	width: 43.9vw;
+	z-index: 2;
+	color: #4c4c4c;
+	padding: 0 10.7vw;
+	font-size: 16px;
+}
+.section-two-images-we-do{
+	height: 173.7vh;
+	position: relative;
+}
+.section-two-images-we-do .black-block{
+	position: absolute;
+	top: 60vh;
+	right: 13.7vw;
+	width: 39vw;
+	height: 84.1vh;
+	z-index: 3;
+}
+.section-two-images-we-do .peach-block{
+	position: absolute;
+	top: 72.2vh;
+	left: 14.2vw;
+	width: 39vw;
+	height: 84.1vh;
+	z-index: 2;
+}
+/* _______________ Our work */
+.section-content-work .separator{
+	padding-top: 0;
+}
+.section-content-work .separator .grid-projects{
+	margin-top: -8.7vh;
+}
+.section-content-work .card-full{
+	margin: 0 0.75rem;
+	height: 300px;
+}
 
