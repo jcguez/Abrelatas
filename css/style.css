@@ -65,6 +65,36 @@ body{
 	width: 100%;
 	height: auto;
 }
+#slide-out{
+	background-color: #fff;
+	background-image: url('../img/logo.Menu.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+	padding: 23px;
+}
+#slide-out .icon-close img{
+	cursor: pointer;
+}
+#slide-out .list-menu{
+	margin-top: 80px;
+	margin-left: 70px;
+}
+#slide-out .list-menu li{
+	font-weight: 400;
+	font-size: 40pt;
+	line-height: 1;
+}
+#slide-out .list-menu li a{
+	margin-top: 25px;
+	color: initial;
+	overflow: hidden;
+	display: block;
+}
+.list-language li, .list-social li{
+	display: inline-block;
+	margin-left: 80px;
+}
 /*Section header*/
 .section-header{
 	padding: 35px 130px;
@@ -106,6 +136,9 @@ body{
 }
 .midnightHeader.gray{
 	background-color: #F6F6F6;
+}
+.midnightHeader.peach{
+	background-color: #D7765D;
 }
 /*End styles for Midnight JS*/
 .section-header .background-text{
@@ -162,6 +195,9 @@ body{
 .phrase{
 	line-height: 1.6;
 }
+.text-gray{
+	color: #b7b7b7;
+}
 
 /*Section projects*/
 .section-projects .header > *{
@@ -196,7 +232,7 @@ body{
 	height: 100vh;
 }
 .cards-container .card.cart-texto{
-	height: 495px;
+	height: 500px;
 }
 .cards-container .card-full{
 	width: 100%;
@@ -391,6 +427,7 @@ body{
 	height: 84.1vh;
 	z-index: 2;
 }
+
 /* _______________ Our work */
 .section-content-work .separator{
 	padding-top: 0;
@@ -401,5 +438,11 @@ body{
 .section-content-work .card-full{
 	margin: 0 0.75rem;
 	height: 300px;
+}
+.section-content-work .grid-projects .card.cart-texto.small-box{
+	padding: 200px 25px 130px 100px;
+}
+.section-content-work .card-full.background-gray{
+	margin-top: -14px;
 }
 

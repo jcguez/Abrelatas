@@ -13,4 +13,5 @@ $(document).ready(function () {
 	// ScrollFire
 	// var options = [{selector: '.scroll-item', offset: 200, callback: function($el) { console.log($el) }}]
   // Materialize.scrollFire(options)
+  new WOW().init();
 })
