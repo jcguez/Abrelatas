@@ -8,10 +8,14 @@ $(document).ready(function () {
 		menuWidth: 500,
 		edge: 'right'
 	})
+	// Ocultar SideNav
+  $("#slide-out").find(".icon-close").click(function () {
+  	$('.button-collapse').sideNav('hide')
+  })
 	// Midnight JS
 	$('nav.fixed').midnight()
 	// ScrollFire
 	// var options = [{selector: '.scroll-item', offset: 200, callback: function($el) { console.log($el) }}]
   // Materialize.scrollFire(options)
-  new WOW().init();
+  new WOW().init()
 })

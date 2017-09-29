@@ -39,8 +39,17 @@ body{
 .height-60{
 	height: 60vh;
 }
+.height-62-5{
+	height: 62.5vh;
+}
+.height-80{
+	height: 80vh;
+}
 .height-150{
 	height: 150vh;
+}
+.width-70{
+	width: 70vw;
 }
 .width-96{
 	width: 96vw;
@@ -79,10 +88,12 @@ body{
 #slide-out .list-menu{
 	margin-top: 80px;
 	margin-left: 70px;
+	padding-bottom: 10vh;
+	overflow: hidden;
 }
 #slide-out .list-menu li{
 	font-weight: 400;
-	font-size: 40pt;
+	font-size: 35pt;
 	line-height: 1;
 }
 #slide-out .list-menu li a{
@@ -91,9 +102,17 @@ body{
 	overflow: hidden;
 	display: block;
 }
-.list-language li, .list-social li{
-	display: inline-block;
+.list-language, .list-social{
+	display: flex;
 	margin-left: 80px;
+	margin-top: 20px;
+}
+.list-language li, .list-social li{
+	display: inline-flex;
+	margin-right: 20px;
+}
+.list-language li a{
+	color: initial;
 }
 /*Section header*/
 .section-header{
@@ -445,4 +464,12 @@ body{
 .section-content-work .card-full.background-gray{
 	margin-top: -14px;
 }
+
+/* _______________ Details our work */
+.section-text-detail-work{
+	position: absolute;
+	top: 38.75vh;
+	right: 0;
+}
+
 
