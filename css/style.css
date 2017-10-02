@@ -471,5 +471,29 @@ body{
 	top: 38.75vh;
 	right: 0;
 }
+.section-text-detail-work p{
+	padding-top: 17.5vh;
+	padding-right: 10vw;
+	padding-bottom: 17.5vh;
+	padding-left: 20vw;
+	color: #fff;
+	font-size: 24px;
+}
+.section-images-with-text-work{
+	padding-top: 31.25vh;
+	padding-left: 5.8vw;
+	padding-right: 8vw;
+	padding-bottom: 14.37vh;
+}
+.section-images-with-text-work .first-row .main-image{
+	width: 42vw;
+	height: 81.87vh;
+}
+.section-images-with-text-work .first-row .main-text p{
+	color: #fff;
+	font-size: 24px;
+}
+
+
 
 
