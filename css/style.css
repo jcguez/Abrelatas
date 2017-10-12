@@ -485,15 +485,65 @@ body{
 	padding-right: 8vw;
 	padding-bottom: 14.37vh;
 }
+.section-images-with-text-work .first-row, .section-images-with-text-work .second-row, .section-images-with-text-work .third-row, .section-images-with-text-work .fourth-row, .section-images-with-text-work .fifth-row{
+	margin-bottom: 40px;
+} 
 .section-images-with-text-work .first-row .main-image{
 	width: 42vw;
 	height: 81.87vh;
 }
-.section-images-with-text-work .first-row .main-text p{
-	color: #fff;
-	font-size: 24px;
+.section-images-with-text-work .first-row .main-text{
+	padding: 0 2vw;
+	height: 81.87vh;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-
-
-
+.section-images-with-text-work .first-row .main-text h5{
+	font-weight: 300;
+}
+.section-images-with-text-work .second-row .big-image{
+	width: 100%;
+	height: 62.5vh;
+}
+.section-images-with-text-work .third-row{
+	position: relative;
+	width: 86.5vw;
+	height: 97vh;
+}
+.section-images-with-text-work .third-row .block-peach{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 71.5vw;
+	height: 82vh;
+	z-index: 1;
+}
+.section-images-with-text-work .third-row .block-gray{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 43vw;
+	height: 53.3vh;
+	z-index: 2;
+}
+.section-images-with-text-work .fourth-row .project-description{
+	padding: 15px 60px;
+}
+.section-images-with-text-work .fourth-row .project-image{
+	height: 53.5vh;
+}
+.section-images-with-text-work .fifth-row{
+	display: flex;
+}
+.section-images-with-text-work .fifth-row .container-icons{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 140px;
+}
+.section-images-with-text-work .fifth-row .container-icons i{
+	font-size: 30px;
+}
 
